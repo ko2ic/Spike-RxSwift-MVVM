@@ -1,0 +1,7 @@
+github "OneSignal/OneSignal-iOS-SDK" "2.8.2"
+github "ReactiveX/RxSwift" "4.1.2"
+github "ephread/Instructions" "1.1.0"
+github "kean/Nuke" "6.1"
+github "kean/RxNuke" "0.4"
+github "malcommac/SwiftDate" "4.5.1"
+github "realm/realm-cocoa" "v3.3.0"

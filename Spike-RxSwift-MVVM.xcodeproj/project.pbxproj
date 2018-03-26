@@ -14,6 +14,16 @@
 		1E494E95206886530020D9C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E494E93206886530020D9C9 /* LaunchScreen.storyboard */; };
 		1E494EA0206886530020D9C9 /* Spike_RxSwift_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E494E9F206886530020D9C9 /* Spike_RxSwift_MVVMTests.swift */; };
 		1E494EAB206886530020D9C9 /* Spike_RxSwift_MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E494EAA206886530020D9C9 /* Spike_RxSwift_MVVMUITests.swift */; };
+		1E494EBB2068E66F0020D9C9 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E494EB92068E66F0020D9C9 /* Realm.framework */; };
+		1E494EBC2068E66F0020D9C9 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E494EBA2068E66F0020D9C9 /* RealmSwift.framework */; };
+		1E494EC72068E6E10020D9C9 /* Instructions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E494EBE2068E6E10020D9C9 /* Instructions.framework */; };
+		1E494EC82068E6E10020D9C9 /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E494EBF2068E6E10020D9C9 /* OneSignal.framework */; };
+		1E494EC92068E6E10020D9C9 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E494EC02068E6E10020D9C9 /* Nuke.framework */; };
+		1E494ECA2068E6E10020D9C9 /* RxNuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E494EC12068E6E10020D9C9 /* RxNuke.framework */; };
+		1E494ECB2068E6E10020D9C9 /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E494EC22068E6E10020D9C9 /* SwiftDate.framework */; };
+		1E494ECC2068E6E10020D9C9 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E494EC32068E6E10020D9C9 /* RxBlocking.framework */; };
+		1E494ECD2068E6E10020D9C9 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E494EC42068E6E10020D9C9 /* RxCocoa.framework */; };
+		1E494ECE2068E6E10020D9C9 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E494EC52068E6E10020D9C9 /* RxSwift.framework */; };
 		7AFEFB043CF63A6580F3E0C6 /* Pods_Spike_RxSwift_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D815FADF05CD155614895528 /* Pods_Spike_RxSwift_MVVM.framework */; };
 		89651B5B3753926EC804E303 /* Pods_Spike_RxSwift_MVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4EB3F24EF5E232F416D5B72 /* Pods_Spike_RxSwift_MVVMUITests.framework */; };
 		D6A3CF54E6F90CE0ADC564F1 /* Pods_Spike_RxSwift_MVVMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EF4FE5774F776A5349B4BC /* Pods_Spike_RxSwift_MVVMTests.framework */; };
@@ -51,6 +61,17 @@
 		1E494EA6206886530020D9C9 /* Spike-RxSwift-MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spike-RxSwift-MVVMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E494EAA206886530020D9C9 /* Spike_RxSwift_MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spike_RxSwift_MVVMUITests.swift; sourceTree = "<group>"; };
 		1E494EAC206886530020D9C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E494EB92068E66F0020D9C9 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		1E494EBA2068E66F0020D9C9 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		1E494EBD2068E6E10020D9C9 /* InstructionsAppExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InstructionsAppExtensions.framework; path = Carthage/Build/iOS/InstructionsAppExtensions.framework; sourceTree = "<group>"; };
+		1E494EBE2068E6E10020D9C9 /* Instructions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Instructions.framework; path = Carthage/Build/iOS/Instructions.framework; sourceTree = "<group>"; };
+		1E494EBF2068E6E10020D9C9 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = Carthage/Build/iOS/OneSignal.framework; sourceTree = "<group>"; };
+		1E494EC02068E6E10020D9C9 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
+		1E494EC12068E6E10020D9C9 /* RxNuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxNuke.framework; path = Carthage/Build/iOS/RxNuke.framework; sourceTree = "<group>"; };
+		1E494EC22068E6E10020D9C9 /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftDate.framework; path = Carthage/Build/iOS/SwiftDate.framework; sourceTree = "<group>"; };
+		1E494EC32068E6E10020D9C9 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		1E494EC42068E6E10020D9C9 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		1E494EC52068E6E10020D9C9 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		37EF4FE5774F776A5349B4BC /* Pods_Spike_RxSwift_MVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spike_RxSwift_MVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB1507D4612A4E9A895323C /* Pods-Spike-RxSwift-MVVMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spike-RxSwift-MVVMUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spike-RxSwift-MVVMUITests/Pods-Spike-RxSwift-MVVMUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DB766FBCCA430D54DBAFFC8 /* Pods-Spike-RxSwift-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spike-RxSwift-MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spike-RxSwift-MVVM/Pods-Spike-RxSwift-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +87,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E494EC72068E6E10020D9C9 /* Instructions.framework in Frameworks */,
+				1E494EC82068E6E10020D9C9 /* OneSignal.framework in Frameworks */,
+				1E494EC92068E6E10020D9C9 /* Nuke.framework in Frameworks */,
+				1E494ECA2068E6E10020D9C9 /* RxNuke.framework in Frameworks */,
+				1E494ECB2068E6E10020D9C9 /* SwiftDate.framework in Frameworks */,
+				1E494ECC2068E6E10020D9C9 /* RxBlocking.framework in Frameworks */,
+				1E494ECD2068E6E10020D9C9 /* RxCocoa.framework in Frameworks */,
+				1E494ECE2068E6E10020D9C9 /* RxSwift.framework in Frameworks */,
+				1E494EBB2068E66F0020D9C9 /* Realm.framework in Frameworks */,
+				1E494EBC2068E66F0020D9C9 /* RealmSwift.framework in Frameworks */,
 				7AFEFB043CF63A6580F3E0C6 /* Pods_Spike_RxSwift_MVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +189,17 @@
 		E2B8765F2A2D3210CA8583B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1E494EBE2068E6E10020D9C9 /* Instructions.framework */,
+				1E494EBD2068E6E10020D9C9 /* InstructionsAppExtensions.framework */,
+				1E494EC02068E6E10020D9C9 /* Nuke.framework */,
+				1E494EBF2068E6E10020D9C9 /* OneSignal.framework */,
+				1E494EC32068E6E10020D9C9 /* RxBlocking.framework */,
+				1E494EC42068E6E10020D9C9 /* RxCocoa.framework */,
+				1E494EC12068E6E10020D9C9 /* RxNuke.framework */,
+				1E494EC52068E6E10020D9C9 /* RxSwift.framework */,
+				1E494EC22068E6E10020D9C9 /* SwiftDate.framework */,
+				1E494EB92068E66F0020D9C9 /* Realm.framework */,
+				1E494EBA2068E66F0020D9C9 /* RealmSwift.framework */,
 				D815FADF05CD155614895528 /* Pods_Spike_RxSwift_MVVM.framework */,
 				37EF4FE5774F776A5349B4BC /* Pods_Spike_RxSwift_MVVMTests.framework */,
 				E4EB3F24EF5E232F416D5B72 /* Pods_Spike_RxSwift_MVVMUITests.framework */,
@@ -178,7 +220,8 @@
 				1E494E85206886530020D9C9 /* Resources */,
 				219C8515143EAD918A4A9F31 /* [CP] Embed Pods Frameworks */,
 				794E90DB3649FA6347E0249E /* [CP] Copy Pods Resources */,
-				1E494EB82068A0D20020D9C9 /* ShellScript */,
+				1E494EB82068A0D20020D9C9 /* Run Script(Cocoapods) */,
+				1E494ECF2068E7140020D9C9 /* Run Script(Carthege) */,
 			);
 			buildRules = (
 			);
@@ -305,18 +348,43 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E494EB82068A0D20020D9C9 /* ShellScript */ = {
+		1E494EB82068A0D20020D9C9 /* Run Script(Cocoapods) */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script(Cocoapods)";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		1E494ECF2068E7140020D9C9 /* Run Script(Carthege) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Instructions.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OneSignal.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxNuke.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftDate.framework",
+			);
+			name = "Run Script(Carthege)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		219C8515143EAD918A4A9F31 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -324,9 +392,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Spike-RxSwift-MVVM/Pods-Spike-RxSwift-MVVM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/RKNotificationHub/RKNotificationHub.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RKNotificationHub.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -639,6 +712,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 327QYZGZ37;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Spike-RxSwift-MVVM/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ko2ic.Spike-RxSwift-MVVM";
@@ -655,6 +732,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 327QYZGZ37;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Spike-RxSwift-MVVM/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ko2ic.Spike-RxSwift-MVVM";

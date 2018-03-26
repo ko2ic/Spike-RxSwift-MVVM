@@ -6,6 +6,11 @@ target 'Spike-RxSwift-MVVM' do
   use_frameworks!
 
   pod 'SwiftLint'
+  pod 'RKNotificationHub'
+  pod 'Google/Analytics'    
+  pod 'GoogleIDFASupport'
+  pod 'Fabric'
+  pod 'Crashlytics'
 
   # Pods for Spike-RxSwift-MVVM
 

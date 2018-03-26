@@ -1,0 +1,13 @@
+github "ReactiveX/RxSwift" ~> 4.0
+github "malcommac/SwiftDate"
+github "realm/realm-cocoa"
+
+github "kean/Nuke" # 画像
+github "kean/RxNuke"
+github "OneSignal/OneSignal-iOS-SDK"
+
+# UI系
+github "ephread/Instructions"
+
+#github "patchthecode/JTAppleCalendar" ~> 7.0
+#github "WenchaoD/FSCalendar"

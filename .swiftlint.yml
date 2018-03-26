@@ -1,0 +1,19 @@
+disabled_rules: 
+  - line_length
+  - type_name
+  - trailing_newline
+  - todo
+  - force_cast
+  - force_try
+included: 
+  - Spike-RxSwift-MVVM
+excluded: # Lint対象から外すファイルのあるパスを記述、CocoaPodsやCarthage
+  - Pods
+  - Carthage
+  - vendor
+line_length: 220
+type_body_length:
+  - 400 # warning
+  - 500 # error
+#force_cast: warning
+#force_try: warning

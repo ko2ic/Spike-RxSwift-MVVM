@@ -22,6 +22,7 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.1.3)
   - RKNotificationHub (2.0.5)
   - SwiftLint (0.25.0)
+  - SwiftyBeaver (1.5.1)
 
 DEPENDENCIES:
   - Crashlytics
@@ -30,6 +31,7 @@ DEPENDENCIES:
   - GoogleIDFASupport
   - RKNotificationHub
   - SwiftLint
+  - SwiftyBeaver
 
 SPEC CHECKSUMS:
   Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
@@ -43,7 +45,8 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   RKNotificationHub: e926748820d719f21ff374657a47fceefa1796b4
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
+  SwiftyBeaver: 4f74563624b2c1e821c522c54142b5dd5ebb0f30
 
-PODFILE CHECKSUM: e9199a1869deb7bce2a8d8e8f568ad6b7c5fee11
+PODFILE CHECKSUM: 5495ee33b938bf6a5616e3c4c72aa971f315bd9f
 
 COCOAPODS: 1.4.0

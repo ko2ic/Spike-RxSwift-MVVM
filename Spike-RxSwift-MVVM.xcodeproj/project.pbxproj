@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E494E8B206886530020D9C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E494E8A206886530020D9C9 /* AppDelegate.swift */; };
-		1E494E8D206886530020D9C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E494E8C206886530020D9C9 /* ViewController.swift */; };
+		1E494E8D206886530020D9C9 /* FirstController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E494E8C206886530020D9C9 /* FirstController.swift */; };
 		1E494E90206886530020D9C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E494E8E206886530020D9C9 /* Main.storyboard */; };
 		1E494E92206886530020D9C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E494E91206886530020D9C9 /* Assets.xcassets */; };
 		1E494E95206886530020D9C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E494E93206886530020D9C9 /* LaunchScreen.storyboard */; };
@@ -135,7 +135,7 @@
 		0FE3EDB916CA10F352172515 /* Pods-DomainsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomainsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DomainsTests/Pods-DomainsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1E494E87206886530020D9C9 /* Spike-RxSwift-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spike-RxSwift-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E494E8A206886530020D9C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E494E8C206886530020D9C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E494E8C206886530020D9C9 /* FirstController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstController.swift; sourceTree = "<group>"; };
 		1E494E8F206886530020D9C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E494E91206886530020D9C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E494E94206886530020D9C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -307,10 +307,10 @@
 		1E494E89206886530020D9C9 /* Spike-RxSwift-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				1E57CC4F2069E13C00AB820D /* Controls */,
+				1E57CC502069E16D00AB820D /* Resources */,
 				1E494E8A206886530020D9C9 /* AppDelegate.swift */,
-				1E494E8C206886530020D9C9 /* ViewController.swift */,
 				1E494E8E206886530020D9C9 /* Main.storyboard */,
-				1E494E91206886530020D9C9 /* Assets.xcassets */,
 				1E494E93206886530020D9C9 /* LaunchScreen.storyboard */,
 				1E494E96206886530020D9C9 /* Info.plist */,
 			);
@@ -369,6 +369,22 @@
 				1E57CC382069D80600AB820D /* Info.plist */,
 			);
 			path = InfrastructuresTests;
+			sourceTree = "<group>";
+		};
+		1E57CC4F2069E13C00AB820D /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				1E494E8C206886530020D9C9 /* FirstController.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		1E57CC502069E16D00AB820D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1E494E91206886530020D9C9 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		25B4DE73A3A7DA1C5D338FB3 /* Pods */ = {
@@ -1082,7 +1098,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E494E8D206886530020D9C9 /* ViewController.swift in Sources */,
+				1E494E8D206886530020D9C9 /* FirstController.swift in Sources */,
 				1E494E8B206886530020D9C9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

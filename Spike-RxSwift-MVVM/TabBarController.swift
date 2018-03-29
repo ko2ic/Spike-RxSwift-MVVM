@@ -1,34 +1,36 @@
-import UIKit
 import Domains
+import UIKit
 
 class TabBarController: UITabBarController, UITabBarControllerDelegate, UINavigationControllerDelegate, UIGestureRecognizerDelegate {
 
-
-// MARK: Life Cycle
+    // MARK: Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.delegate = self
+        delegate = self
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
+
     // MARK: UITabBarDelegate
-    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+
+    override func tabBar(_: UITabBar, didSelect _: UITabBarItem) {
     }
 
     // MARK: UITabBarControllerDelegate
-    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+
+    func tabBarController(_: UITabBarController, didSelect _: UIViewController) {
     }
 
-    func tabBarController(_ tabBarController: UITabBarController, willBeginCustomizing viewControllers: [UIViewController]) {
+    func tabBarController(_: UITabBarController, willBeginCustomizing _: [UIViewController]) {
     }
 
-    func tabBarController(_ tabBarController: UITabBarController, willEndCustomizing viewControllers: [UIViewController], changed: Bool){
+    func tabBarController(_: UITabBarController, willEndCustomizing _: [UIViewController], changed _: Bool) {
     }
 
-    func tabBarController(_ tabBarController: UITabBarController, didEndCustomizing viewControllers: [UIViewController], changed: Bool) {
+    func tabBarController(_: UITabBarController, didEndCustomizing _: [UIViewController], changed _: Bool) {
     }
 }

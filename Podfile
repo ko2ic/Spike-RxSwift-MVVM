@@ -1,5 +1,6 @@
 def shared_all
     pod 'SwiftLint'
+    #pod 'SwiftFormat/CLI'
 end
 def shared_ui
 	pod 'RKNotificationHub'

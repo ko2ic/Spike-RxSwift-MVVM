@@ -31,7 +31,8 @@ class FirstController: UIViewController {
             datasource.sectionModels[index].header
         })
 
-        viewModel.fetchList().asObservable()
+        viewModel.fetchList()
+            .asObservable()
             .bind(to: tableview.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
     }

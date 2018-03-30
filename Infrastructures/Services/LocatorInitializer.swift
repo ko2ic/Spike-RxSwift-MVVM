@@ -1,5 +1,5 @@
-import CommonDomains
-import CommonInfrastructures
+
+import Domains
 
 /// サービスロケーターの初期化クラス
 public class LocatorInitializer {
@@ -23,6 +23,9 @@ public class LocatorInitializer {
         }
         locator.add {
             TransactionTemplateImpl()
+        }
+        locator.add {
+            FirstRepositoryImpl()
         }
 
         return {}

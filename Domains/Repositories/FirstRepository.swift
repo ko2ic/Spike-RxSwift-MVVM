@@ -6,7 +6,8 @@
 //  Copyright © 2018年 ko2ic. All rights reserved.
 //
 
-import Foundation
+import RxSwift
 
 public protocol FirstRepository {
+    func fetchList() -> Single<[RepoEntity]>
 }

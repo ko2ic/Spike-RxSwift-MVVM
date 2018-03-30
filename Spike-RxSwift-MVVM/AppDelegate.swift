@@ -6,6 +6,8 @@
 //  Copyright © 2018年 ko2ic. All rights reserved.
 //
 
+import Domains
+import Infrastructures
 import UIKit
 
 @UIApplicationMain
@@ -13,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        LoggerInitializer.sharedInstance.setup()
+        LocatorInitializer.sharedInstance.setup()
+
+        Migration.migration()
+
         return true
     }
 

@@ -26,7 +26,7 @@ public class ApiCaller {
         var request = try! context.encoding.encode(context, with: context.parameters)
         request.httpMethod = context.method.rawValue
         return response(request) { data -> T in
-            try! JSONDecoder().decode(T.self, from: data)
+            try JSONDecoder().decode(T.self, from: data)
         }
     }
 
@@ -41,13 +41,13 @@ public class ApiCaller {
         var request = try! context.encoding.encode(context, with: context.parameters)
         request.httpMethod = "GET"
         return response(request) { data -> [T] in
-            try! JSONDecoder().decode([T].self, from: data)
+            try JSONDecoder().decode([T].self, from: data)
         }
     }
 
     // MARK: - private method
 
-    private func response<R>(_ request: URLRequest, convert: @escaping (Data) -> R) -> Single<R> {
+    private func response<R>(_ request: URLRequest, convert: @escaping (Data) throws -> R) -> Single<R> {
         return Observable.create { observer in
             let config = URLSessionConfiguration.default
             config.timeoutIntervalForRequest = 20
@@ -112,8 +112,12 @@ public class ApiCaller {
                         }
                     }
 
-                    let result = convert(data)
-                    observer.on(.next(result))
+                    do {
+                        let result = try convert(data)
+                        observer.on(.next(result))
+                    } catch {
+                        observer.on(.error(HttpErrorType.unknown(["jsonパースエラー": error])))
+                    }
                 }
                 Logger.info("\n-------------------------api end---------------------------")
             }

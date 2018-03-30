@@ -9,23 +9,15 @@
 import RxSwift
 
 public class FirstDomain {
-    public init() {}
+    fileprivate let locator: ServiceLocator!
+
+    public init(locator: ServiceLocator = ServiceLocatorImpl.sharedInstance) {
+        self.locator = locator
+    }
 
     public func fetchList() -> Single<[RepoEntity]> {
-        let entity1 = RepoEntity().apply {
-            $0.id = 1
-            $0.fullName = "fullName1"
-            $0.name = "name1"
-            $0.stars = 1
-        }
+        let repository: FirstRepository = locator.lookup()
 
-        let entity2 = RepoEntity().apply {
-            $0.id = 2
-            $0.fullName = "fullName2"
-            $0.name = "name2"
-            $0.stars = 2
-        }
-
-        return Single.just([entity1, entity2])
+        return repository.fetchList()
     }
 }

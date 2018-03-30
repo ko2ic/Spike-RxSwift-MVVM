@@ -12,8 +12,6 @@
 		1E36108C206DD08F00BAEB0A /* FirstRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E36108B206DD08F00BAEB0A /* FirstRepository.swift */; };
 		1E361093206DD38600BAEB0A /* LoggerInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E361090206DD38600BAEB0A /* LoggerInitializer.swift */; };
 		1E361094206DD38600BAEB0A /* LocatorInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E361091206DD38600BAEB0A /* LocatorInitializer.swift */; };
-		1E36109E206DD4A400BAEB0A /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E36109C206DD4A400BAEB0A /* ServiceLocator.swift */; };
-		1E36109F206DD4A400BAEB0A /* ServiceLocatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E36109D206DD4A400BAEB0A /* ServiceLocatorImpl.swift */; };
 		1E3610A2206DD5E300BAEB0A /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3610A1206DD5E300BAEB0A /* Logger.swift */; };
 		1E3610AE206DD6DF00BAEB0A /* ApiErrorStateChangerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3610AC206DD6DF00BAEB0A /* ApiErrorStateChangerImpl.swift */; };
 		1E3610AF206DD6DF00BAEB0A /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3610AD206DD6DF00BAEB0A /* ApiCaller.swift */; };
@@ -35,6 +33,13 @@
 		1E3610D6206DEA1600BAEB0A /* TransactionErrorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3610D5206DEA1600BAEB0A /* TransactionErrorState.swift */; };
 		1E3610D8206DEA5E00BAEB0A /* TransactionErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3610D7206DEA5E00BAEB0A /* TransactionErrorType.swift */; };
 		1E3610DA206DEB5E00BAEB0A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3610D9206DEB5E00BAEB0A /* Environment.swift */; };
+		1E3610DC206E2C0B00BAEB0A /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3610DB206E2C0B00BAEB0A /* ServiceLocator.swift */; };
+		1E3610DE206E2C8800BAEB0A /* ServiceLocatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3610DD206E2C8800BAEB0A /* ServiceLocatorImpl.swift */; };
+		1E3610E0206E2E5A00BAEB0A /* RepoHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3610DF206E2E5A00BAEB0A /* RepoHttpClient.swift */; };
+		1E3610E2206E307D00BAEB0A /* MyRestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3610E1206E307D00BAEB0A /* MyRestable.swift */; };
+		1E3610E5206E347200BAEB0A /* Environment-Info-develop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E3610E4206E347200BAEB0A /* Environment-Info-develop.plist */; };
+		1E3610E8206E355700BAEB0A /* Environment-Info-production.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E3610E6206E355700BAEB0A /* Environment-Info-production.plist */; };
+		1E3610E9206E355700BAEB0A /* Environment-Info-staging.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E3610E7206E355700BAEB0A /* Environment-Info-staging.plist */; };
 		1E494E8B206886530020D9C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E494E8A206886530020D9C9 /* AppDelegate.swift */; };
 		1E494E8D206886530020D9C9 /* FirstController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E494E8C206886530020D9C9 /* FirstController.swift */; };
 		1E494E90206886530020D9C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E494E8E206886530020D9C9 /* Main.storyboard */; };
@@ -183,8 +188,6 @@
 		1E36108B206DD08F00BAEB0A /* FirstRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRepository.swift; sourceTree = "<group>"; };
 		1E361090206DD38600BAEB0A /* LoggerInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerInitializer.swift; sourceTree = "<group>"; };
 		1E361091206DD38600BAEB0A /* LocatorInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocatorInitializer.swift; sourceTree = "<group>"; };
-		1E36109C206DD4A400BAEB0A /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
-		1E36109D206DD4A400BAEB0A /* ServiceLocatorImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocatorImpl.swift; sourceTree = "<group>"; };
 		1E3610A1206DD5E300BAEB0A /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		1E3610AC206DD6DF00BAEB0A /* ApiErrorStateChangerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiErrorStateChangerImpl.swift; sourceTree = "<group>"; };
 		1E3610AD206DD6DF00BAEB0A /* ApiCaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
@@ -206,6 +209,13 @@
 		1E3610D5206DEA1600BAEB0A /* TransactionErrorState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionErrorState.swift; sourceTree = "<group>"; };
 		1E3610D7206DEA5E00BAEB0A /* TransactionErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionErrorType.swift; sourceTree = "<group>"; };
 		1E3610D9206DEB5E00BAEB0A /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		1E3610DB206E2C0B00BAEB0A /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		1E3610DD206E2C8800BAEB0A /* ServiceLocatorImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocatorImpl.swift; sourceTree = "<group>"; };
+		1E3610DF206E2E5A00BAEB0A /* RepoHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoHttpClient.swift; sourceTree = "<group>"; };
+		1E3610E1206E307D00BAEB0A /* MyRestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRestable.swift; sourceTree = "<group>"; };
+		1E3610E4206E347200BAEB0A /* Environment-Info-develop.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Environment-Info-develop.plist"; sourceTree = "<group>"; };
+		1E3610E6206E355700BAEB0A /* Environment-Info-production.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Environment-Info-production.plist"; sourceTree = "<group>"; };
+		1E3610E7206E355700BAEB0A /* Environment-Info-staging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Environment-Info-staging.plist"; sourceTree = "<group>"; };
 		1E494E87206886530020D9C9 /* Spike-RxSwift-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spike-RxSwift-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E494E8A206886530020D9C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E494E8C206886530020D9C9 /* FirstController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstController.swift; sourceTree = "<group>"; };
@@ -378,8 +388,6 @@
 		1E36108F206DD34C00BAEB0A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				1E36109C206DD4A400BAEB0A /* ServiceLocator.swift */,
-				1E36109D206DD4A400BAEB0A /* ServiceLocatorImpl.swift */,
 				1E361091206DD38600BAEB0A /* LocatorInitializer.swift */,
 				1E361090206DD38600BAEB0A /* LoggerInitializer.swift */,
 			);
@@ -398,6 +406,7 @@
 			isa = PBXGroup;
 			children = (
 				1E3610AB206DD6DF00BAEB0A /* Common */,
+				1E3610DF206E2E5A00BAEB0A /* RepoHttpClient.swift */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -405,6 +414,8 @@
 		1E3610A0206DD5CF00BAEB0A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1E3610DB206E2C0B00BAEB0A /* ServiceLocator.swift */,
+				1E3610DD206E2C8800BAEB0A /* ServiceLocatorImpl.swift */,
 				1E3610A1206DD5E300BAEB0A /* Logger.swift */,
 			);
 			path = Services;
@@ -413,6 +424,7 @@
 		1E3610AB206DD6DF00BAEB0A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1E3610E1206E307D00BAEB0A /* MyRestable.swift */,
 				1E3610C2206DD87D00BAEB0A /* Restable.swift */,
 				1E3610D1206DE81600BAEB0A /* ApiErrorStateChanger.swift */,
 				1E3610AC206DD6DF00BAEB0A /* ApiErrorStateChangerImpl.swift */,
@@ -454,6 +466,16 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		1E3610E3206E343A00BAEB0A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				1E3610E4206E347200BAEB0A /* Environment-Info-develop.plist */,
+				1E3610E7206E355700BAEB0A /* Environment-Info-staging.plist */,
+				1E3610E6206E355700BAEB0A /* Environment-Info-production.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		1E494E7E206886530020D9C9 = {
 			isa = PBXGroup;
 			children = (
@@ -490,6 +512,7 @@
 				1E57CC4F2069E13C00AB820D /* Controls */,
 				1E57CC61206B68B700AB820D /* ViewModels */,
 				1E57CC502069E16D00AB820D /* Resources */,
+				1E3610E3206E343A00BAEB0A /* Configuration */,
 				1E494E8A206886530020D9C9 /* AppDelegate.swift */,
 				1E57CC5F2069F7F900AB820D /* TabBarController.swift */,
 				1E494E8E206886530020D9C9 /* Main.storyboard */,
@@ -723,6 +746,7 @@
 				1E494ECF2068E7140020D9C9 /* Run Script(Carthage) */,
 				1E57CC202069D76500AB820D /* Embed Frameworks */,
 				1E57CC75206CC47700AB820D /* Run Script(SwiftFormat) */,
+				1E3610EA206E365E00BAEB0A /* Run Script(Environment-Info) */,
 			);
 			buildRules = (
 			);
@@ -937,11 +961,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E3610E9206E355700BAEB0A /* Environment-Info-staging.plist in Resources */,
 				1E494E95206886530020D9C9 /* LaunchScreen.storyboard in Resources */,
 				1E494E92206886530020D9C9 /* Assets.xcassets in Resources */,
+				1E3610E5206E347200BAEB0A /* Environment-Info-develop.plist in Resources */,
 				1E494E90206886530020D9C9 /* Main.storyboard in Resources */,
 				1E57CC5E2069F6B800AB820D /* Second.storyboard in Resources */,
 				1E57CC5C2069F69400AB820D /* First.storyboard in Resources */,
+				1E3610E8206E355700BAEB0A /* Environment-Info-production.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1007,6 +1034,20 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		1E3610EA206E365E00BAEB0A /* Run Script(Environment-Info) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script(Environment-Info)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "BUILD_PRODUCT=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\"\nPROJECT_PATH=\"${PROJECT_DIR}/${PROJECT_NAME}\"\nINFO_BUILD_PATH=\"${BUILD_PRODUCT}/Environment-Info.plist\"\n\nrm -rf \"${INFO_BUILD_PATH}\"\nif [ \"${CONFIGURATION}\" = \"Debug\" ]; then\ncp \"${PROJECT_PATH}/Configuration/Environment-Info-develop.plist\" \"${INFO_BUILD_PATH}\"\necho \"Development Environment-Info copied into ${BUILD_PRODUCT}\"\nelse\ncp \"${PROJECT_PATH}/Configuration/Environment-Info-production.plist\" \"${INFO_BUILD_PATH}\"\necho \"Production Environment-Info copied into ${BUILD_PRODUCT}\"\nfi";
 		};
 		1E494EB82068A0D20020D9C9 /* Run Script(Cocoapods) */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1405,7 +1446,9 @@
 				1E57CC72206C849E00AB820D /* Appliable.swift in Sources */,
 				1E3610CC206DE49C00BAEB0A /* MimeType.swift in Sources */,
 				1E3610CE206DE65E00BAEB0A /* ApiErrorState.swift in Sources */,
+				1E3610DC206E2C0B00BAEB0A /* ServiceLocator.swift in Sources */,
 				1E57CC6D206B910B00AB820D /* PermissionDto.swift in Sources */,
+				1E3610DE206E2C8800BAEB0A /* ServiceLocatorImpl.swift in Sources */,
 				1E57CC69206B905B00AB820D /* RepoEntity.swift in Sources */,
 				1E3610DA206DEB5E00BAEB0A /* Environment.swift in Sources */,
 				1E36108C206DD08F00BAEB0A /* FirstRepository.swift in Sources */,
@@ -1427,7 +1470,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E36109E206DD4A400BAEB0A /* ServiceLocator.swift in Sources */,
 				1E3610B9206DD6EC00BAEB0A /* Storable.swift in Sources */,
 				1E3610BA206DD6EC00BAEB0A /* AppRepositoryWrapper.swift in Sources */,
 				1E361093206DD38600BAEB0A /* LoggerInitializer.swift in Sources */,
@@ -1435,7 +1477,6 @@
 				1E3610AF206DD6DF00BAEB0A /* ApiCaller.swift in Sources */,
 				1E3610C3206DD87E00BAEB0A /* Restable.swift in Sources */,
 				1E361089206DD05800BAEB0A /* FirstRepositoryImpl.swift in Sources */,
-				1E36109F206DD4A400BAEB0A /* ServiceLocatorImpl.swift in Sources */,
 				1E3610AE206DD6DF00BAEB0A /* ApiErrorStateChangerImpl.swift in Sources */,
 				1E3610D2206DE81600BAEB0A /* ApiErrorStateChanger.swift in Sources */,
 				1E3610C7206DD94B00BAEB0A /* ParameterEncoding.swift in Sources */,
@@ -1445,6 +1486,8 @@
 				1E3610B8206DD6EC00BAEB0A /* AppRepository.swift in Sources */,
 				1E3610D4206DE9C500BAEB0A /* TransactionTemplate.swift in Sources */,
 				1E3610B7206DD6EC00BAEB0A /* RealmWrapper.swift in Sources */,
+				1E3610E0206E2E5A00BAEB0A /* RepoHttpClient.swift in Sources */,
+				1E3610E2206E307D00BAEB0A /* MyRestable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

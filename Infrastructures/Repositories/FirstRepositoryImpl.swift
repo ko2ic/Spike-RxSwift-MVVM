@@ -7,6 +7,10 @@
 //
 
 import Domains
+import RxSwift
 
 class FirstRepositoryImpl: FirstRepository {
+    func fetchList() -> Single<[RepoEntity]> {
+        return RepoHttpClient.sharedInstance.fetchList()
+    }
 }

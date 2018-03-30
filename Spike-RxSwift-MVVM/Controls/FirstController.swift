@@ -36,6 +36,13 @@ class FirstController: UIViewController {
             .disposed(by: disposeBag)
     }
 
+    deinit {
+        searchbar.removeFromSuperview()
+        tableview.removeFromSuperview()
+        searchbar = nil
+        tableview = nil
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

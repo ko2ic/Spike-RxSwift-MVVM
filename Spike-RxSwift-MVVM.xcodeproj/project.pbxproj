@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E361086206CE46300BAEB0A /* FirstDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E361085206CE46300BAEB0A /* FirstDomain.swift */; };
 		1E494E8B206886530020D9C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E494E8A206886530020D9C9 /* AppDelegate.swift */; };
 		1E494E8D206886530020D9C9 /* FirstController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E494E8C206886530020D9C9 /* FirstController.swift */; };
 		1E494E90206886530020D9C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E494E8E206886530020D9C9 /* Main.storyboard */; };
@@ -143,6 +144,7 @@
 		0A31C9290BF90A48BF88A16E /* Pods-Spike-RxSwift-MVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spike-RxSwift-MVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spike-RxSwift-MVVMTests/Pods-Spike-RxSwift-MVVMTests.release.xcconfig"; sourceTree = "<group>"; };
 		0E71831B2B8D68CFBF30D98C /* Pods_All_Infrastructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_All_Infrastructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE3EDB916CA10F352172515 /* Pods-DomainsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomainsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DomainsTests/Pods-DomainsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E361085206CE46300BAEB0A /* FirstDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDomain.swift; sourceTree = "<group>"; };
 		1E494E87206886530020D9C9 /* Spike-RxSwift-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spike-RxSwift-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E494E8A206886530020D9C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E494E8C206886530020D9C9 /* FirstController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstController.swift; sourceTree = "<group>"; };
@@ -429,6 +431,7 @@
 			children = (
 				1E57CC6A206B90EF00AB820D /* ValueObjects */,
 				1E57CC67206B904900AB820D /* Entities */,
+				1E361085206CE46300BAEB0A /* FirstDomain.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1226,6 +1229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E361086206CE46300BAEB0A /* FirstDomain.swift in Sources */,
 				1E57CC72206C849E00AB820D /* Appliable.swift in Sources */,
 				1E57CC6D206B910B00AB820D /* PermissionDto.swift in Sources */,
 				1E57CC69206B905B00AB820D /* RepoEntity.swift in Sources */,

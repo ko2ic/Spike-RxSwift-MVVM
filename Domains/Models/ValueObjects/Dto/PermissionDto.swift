@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class PermissionDto {
+public class PermissionDto: Codable {
     public var haveAdmin: Bool = false
 
     public var havePushAuthorizetion: Bool = false

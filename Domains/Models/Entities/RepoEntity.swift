@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class RepoEntity: Appliable {
+public class RepoEntity: Appliable, Codable {
     public init() {
     }
 
@@ -21,4 +21,10 @@ public class RepoEntity: Appliable {
     public var stars: Int = 0
 
     public var permissions: PermissionDto? = PermissionDto()
+
+    enum CodingKeys: String, CodingKey {
+        case name
+        case fullName
+        case stars
+    }
 }

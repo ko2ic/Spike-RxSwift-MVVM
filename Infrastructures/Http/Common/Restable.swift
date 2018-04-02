@@ -6,6 +6,8 @@
 //  Copyright © 2015年 ko2ic. All rights reserved
 //
 
+import Foundation
+
 /**
  *  REST可能なプロトコルを表す
  */
@@ -17,6 +19,7 @@ public protocol Restable: URLRequestConvertible {
     var encoding: ParameterEncoding { get }
     var headers: [String: String]? { get }
     var cachePolicy: NSURLRequest.CachePolicy { get }
+    var keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy { get }
 
     init()
     init(_ parameters: [String: Any])

@@ -26,8 +26,10 @@ public class ApiCaller {
         var request = try! context.encoding.encode(context, with: context.parameters)
         request.httpMethod = context.method.rawValue
         return response(request) { data -> T in
-            try JSONDecoder().decode(T.self, from: data)
-        }
+            let decorder = JSONDecoder()
+            decorder.keyDecodingStrategy = context.keyDecodingStrategy
+            return try decorder.decode(T.self, from: data)
+        }.subscribeOn(ConcurrentMainScheduler.instance)
     }
 
     /**
@@ -41,7 +43,9 @@ public class ApiCaller {
         var request = try! context.encoding.encode(context, with: context.parameters)
         request.httpMethod = "GET"
         return response(request) { data -> [T] in
-            try JSONDecoder().decode([T].self, from: data)
+            let decorder = JSONDecoder()
+            decorder.keyDecodingStrategy = context.keyDecodingStrategy
+            return try decorder.decode([T].self, from: data)
         }
     }
 
@@ -119,6 +123,7 @@ public class ApiCaller {
                         observer.on(.error(HttpErrorType.unknown(["jsonパースエラー": error])))
                     }
                 }
+                observer.on(.completed)
                 Logger.info("\n-------------------------api end---------------------------")
             }
             task.resume()

@@ -15,7 +15,7 @@ public class FirstDomain {
         self.locator = locator
     }
 
-    public func fetchList() -> Single<[RepoEntity]> {
+    public func fetchList() -> Single<SearchResultDto> {
         let repository: FirstRepository = locator.lookup()
 
         return repository.fetchList()

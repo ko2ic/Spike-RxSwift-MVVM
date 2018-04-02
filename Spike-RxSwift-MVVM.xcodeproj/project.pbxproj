@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0DC2002071DC2800AFD24A /* SearchResultDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0DC1FF2071DC2800AFD24A /* SearchResultDto.swift */; };
 		1E361086206CE46300BAEB0A /* FirstDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E361085206CE46300BAEB0A /* FirstDomain.swift */; };
 		1E361089206DD05800BAEB0A /* FirstRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E361088206DD05800BAEB0A /* FirstRepositoryImpl.swift */; };
 		1E36108C206DD08F00BAEB0A /* FirstRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E36108B206DD08F00BAEB0A /* FirstRepository.swift */; };
@@ -183,6 +184,7 @@
 		0A31C9290BF90A48BF88A16E /* Pods-Spike-RxSwift-MVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spike-RxSwift-MVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spike-RxSwift-MVVMTests/Pods-Spike-RxSwift-MVVMTests.release.xcconfig"; sourceTree = "<group>"; };
 		0E71831B2B8D68CFBF30D98C /* Pods_All_Infrastructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_All_Infrastructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE3EDB916CA10F352172515 /* Pods-DomainsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomainsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DomainsTests/Pods-DomainsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E0DC1FF2071DC2800AFD24A /* SearchResultDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDto.swift; sourceTree = "<group>"; };
 		1E361085206CE46300BAEB0A /* FirstDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDomain.swift; sourceTree = "<group>"; };
 		1E361088206DD05800BAEB0A /* FirstRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRepositoryImpl.swift; sourceTree = "<group>"; };
 		1E36108B206DD08F00BAEB0A /* FirstRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRepository.swift; sourceTree = "<group>"; };
@@ -647,6 +649,7 @@
 			children = (
 				1E3610C8206DE3E600BAEB0A /* FileUploadDto.swift */,
 				1E57CC6C206B910B00AB820D /* PermissionDto.swift */,
+				1E0DC1FF2071DC2800AFD24A /* SearchResultDto.swift */,
 			);
 			path = Dto;
 			sourceTree = "<group>";
@@ -1452,6 +1455,7 @@
 				1E57CC69206B905B00AB820D /* RepoEntity.swift in Sources */,
 				1E3610DA206DEB5E00BAEB0A /* Environment.swift in Sources */,
 				1E36108C206DD08F00BAEB0A /* FirstRepository.swift in Sources */,
+				1E0DC2002071DC2800AFD24A /* SearchResultDto.swift in Sources */,
 				1E3610D6206DEA1600BAEB0A /* TransactionErrorState.swift in Sources */,
 				1E3610C9206DE3E600BAEB0A /* FileUploadDto.swift in Sources */,
 				1E3610D8206DEA5E00BAEB0A /* TransactionErrorType.swift in Sources */,

@@ -18,4 +18,8 @@ public extension Restable {
     public var cachePolicy: NSURLRequest.CachePolicy {
         return NSURLRequest.CachePolicy.reloadIgnoringCacheData
     }
+
+    public var keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy {
+        return JSONDecoder.KeyDecodingStrategy.convertFromSnakeCase
+    }
 }

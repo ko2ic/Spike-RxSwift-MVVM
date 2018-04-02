@@ -25,7 +25,7 @@ class FirstController: UIViewController {
 
         let dataSource = RxTableViewSectionedReloadDataSource<SectionOfCustomData>(configureCell: { (_, tableview, indexPath, item) -> UITableViewCell in
             let cell = tableview.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-            cell.textLabel?.text = "Item \(item.id): \(item.fullName) - \(item.stars)"
+            cell.textLabel?.text = "Item \(item.id): \(item.fullName) - \(item.stars ?? 0)"
             return cell
         }, titleForHeaderInSection: { (datasource, index) -> String? in
             datasource.sectionModels[index].header

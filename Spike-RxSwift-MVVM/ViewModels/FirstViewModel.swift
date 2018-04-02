@@ -16,13 +16,13 @@ class FirstViewModel {
         let domain = FirstDomain()
 
         let result1 = domain.fetchList()
-            .flatMap { entities -> Single<SectionOfCustomData> in
-                Single.just(SectionOfCustomData(header: "First section", items: entities))
+            .flatMap { (dto: SearchResultDto) -> Single<SectionOfCustomData> in
+                Single.just(SectionOfCustomData(header: "First section", items: dto.items))
             }
 
         let result2 = domain.fetchList()
-            .flatMap { entities -> Single<SectionOfCustomData> in
-                Single.just(SectionOfCustomData(header: "Second section", items: entities))
+            .flatMap { dto -> Single<SectionOfCustomData> in
+                Single.just(SectionOfCustomData(header: "Second section", items: dto.items))
             }
 
         return Single.zip(result1, result2, resultSelector: { (first, second) -> [SectionOfCustomData] in

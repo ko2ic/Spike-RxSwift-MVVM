@@ -18,13 +18,13 @@ public class RepoEntity: Appliable, Codable {
 
     public var fullName: String = ""
 
-    public var stars: Int = 0
+    public var stars: Int? = 0
 
     public var permissions: PermissionDto? = PermissionDto()
 
     enum CodingKeys: String, CodingKey {
         case name
         case fullName
-        case stars
+        case stars = "stargazers_count"
     }
 }

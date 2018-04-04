@@ -52,7 +52,7 @@ public class ApiCaller {
     // MARK: - private method
 
     private func response<R>(_ request: URLRequest, convert: @escaping (Data) throws -> R) -> Single<R> {
-        return Observable.create { observer in
+        return Single<R>.create { observer -> Disposable in
             let config = URLSessionConfiguration.default
             config.timeoutIntervalForRequest = 20
             let session = URLSession(configuration: config, delegate: nil, delegateQueue: OperationQueue.main)
@@ -72,26 +72,26 @@ public class ApiCaller {
                     Logger.error(error!)
 
                     if nsError._code == NSURLErrorTimedOut {
-                        observer.on(.error(HttpErrorType.timedOutError))
+                        observer(.error(HttpErrorType.timedOutError))
                     } else if nsError._code == NSURLErrorCannotFindHost {
-                        observer.on(.error(HttpErrorType.cannotFindHost))
+                        observer(.error(HttpErrorType.cannotFindHost))
                     } else if nsError._code == NSURLErrorCannotConnectToHost {
-                        observer.on(.error(HttpErrorType.cannotConnectToHost(nsError._userInfo as? [AnyHashable: Any])))
+                        observer(.error(HttpErrorType.cannotConnectToHost(nsError._userInfo as? [AnyHashable: Any])))
                     } else if nsError._code == NSURLErrorNetworkConnectionLost {
-                        observer.on(.error(HttpErrorType.networkConnectionLost))
+                        observer(.error(HttpErrorType.networkConnectionLost))
                     } else if nsError._code == NSURLErrorNotConnectedToInternet {
-                        observer.on(.error(HttpErrorType.notConnectedToInternet))
+                        observer(.error(HttpErrorType.notConnectedToInternet))
                     } else if nsError._code == NSURLErrorSecureConnectionFailed || nsError._code == NSURLErrorServerCertificateHasBadDate || nsError._code == NSURLErrorServerCertificateUntrusted || nsError._code == NSURLErrorServerCertificateHasUnknownRoot || nsError._code == NSURLErrorServerCertificateNotYetValid || nsError._code == NSURLErrorClientCertificateRejected || nsError._code == NSURLErrorClientCertificateRequired || nsError._code == NSURLErrorClientCertificateRequired || nsError._code == NSURLErrorCannotLoadFromNetwork {
                         if let userInfo = nsError._userInfo as? [AnyHashable: Any] {
-                            observer.on(.error(HttpErrorType.sslError(userInfo)))
+                            observer(.error(HttpErrorType.sslError(userInfo)))
                         } else {
-                            observer.on(.error(HttpErrorType.sslError(["error_code": nsError._code])))
+                            observer(.error(HttpErrorType.sslError(["error_code": nsError._code])))
                         }
                     } else {
                         if let userInfo = nsError._userInfo as? [AnyHashable: Any] {
-                            observer.on(.error(HttpErrorType.unknown(userInfo)))
+                            observer(.error(HttpErrorType.unknown(userInfo)))
                         } else {
-                            observer.on(.error(HttpErrorType.unknown(["error_code": nsError._code])))
+                            observer(.error(HttpErrorType.unknown(["error_code": nsError._code])))
                         }
                     }
                     Logger.info("\n-------------------------api end---------------------------")
@@ -110,7 +110,7 @@ public class ApiCaller {
                                 detail = try JSONSerialization.jsonObject(with: data, options: []) as? [AnyHashable: Any]
                             } catch {
                             }
-                            observer.on(.error(HttpErrorType.statusCode(statusCode, detail)))
+                            observer(.error(HttpErrorType.statusCode(statusCode, detail)))
                             Logger.info("\n-------------------------api end---------------------------")
                             return
                         }
@@ -118,17 +118,16 @@ public class ApiCaller {
 
                     do {
                         let result = try convert(data)
-                        observer.on(.next(result))
+                        observer(.success(result))
                     } catch {
-                        observer.on(.error(HttpErrorType.unknown(["jsonパースエラー": error])))
+                        observer(.error(HttpErrorType.unknown(["jsonパースエラー": error])))
                     }
                 }
-                observer.on(.completed)
                 Logger.info("\n-------------------------api end---------------------------")
             }
             task.resume()
             return Disposables.create(with: task.cancel)
-        }.asSingle()
+        }
     }
 
     private class func createBody(with fileDto: FileUploadDto, boundary: String) -> Data {

@@ -15,9 +15,9 @@ public class FirstDomain {
         self.locator = locator
     }
 
-    public func fetchList() -> Single<SearchResultDto> {
+    public func fetchList(_ freeword: String) -> Single<SearchResultDto> {
         let repository: FirstRepository = locator.lookup()
 
-        return repository.fetchList()
+        return repository.fetchList(freeword)
     }
 }

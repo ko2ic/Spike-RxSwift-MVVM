@@ -6,19 +6,19 @@
 //  Copyright © 2018年 ko2ic. All rights reserved.
 //
 
+import Differentiator
 import Domains
 import Foundation
-import RxDataSources
 
-struct SectionOfCustomData {
-    var header: String
-    var items: [Item]
+public struct SectionOfCustomData {
+    public var header: String
+    public var items: [Item]
 }
 
 extension SectionOfCustomData: SectionModelType {
-    typealias Item = RepoEntity
+    public typealias Item = RepoEntity
 
-    init(original: SectionOfCustomData, items: [Item]) {
+    public init(original: SectionOfCustomData, items: [Item]) {
         self = original
         self.items = items
     }

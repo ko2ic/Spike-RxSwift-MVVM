@@ -57,9 +57,11 @@ public class ApiCaller {
             config.timeoutIntervalForRequest = 20
             let session = URLSession(configuration: config, delegate: nil, delegateQueue: OperationQueue.main)
             let task = session.dataTask(with: request) { data, response, error in
+                let url = (request.url?.absoluteString)!
+                let httpMethod = (request.httpMethod)!
                 Logger.info("\n-------------------------api start-------------------------")
-                Logger.info("url = " + (request.url?.absoluteString)!)
-                Logger.info("method = " + request.httpMethod!)
+                Logger.info("url = \(url)")
+                Logger.info("method = \(httpMethod)")
                 if let requestBody = request.httpBody, let requestBodyLog = NSString(data: requestBody, encoding: String.Encoding.utf8.rawValue) {
                     Logger.info("requestBody = \(requestBodyLog)")
                 }
@@ -72,13 +74,21 @@ public class ApiCaller {
                     Logger.error(error!)
 
                     if nsError._code == NSURLErrorTimedOut {
-                        observer(.error(HttpErrorType.timedOutError))
+                        if let userInfo = nsError._userInfo as? [AnyHashable: Any] {
+                            observer(.error(HttpErrorType.timeOutError(userInfo)))
+                        } else {
+                            observer(.error(HttpErrorType.timeOutError(nil)))
+                        }
                     } else if nsError._code == NSURLErrorCannotFindHost {
                         observer(.error(HttpErrorType.cannotFindHost))
                     } else if nsError._code == NSURLErrorCannotConnectToHost {
                         observer(.error(HttpErrorType.cannotConnectToHost(nsError._userInfo as? [AnyHashable: Any])))
                     } else if nsError._code == NSURLErrorNetworkConnectionLost {
-                        observer(.error(HttpErrorType.networkConnectionLost))
+                        if let userInfo = nsError._userInfo as? [AnyHashable: Any] {
+                            observer(.error(HttpErrorType.networkConnectionLost(userInfo)))
+                        } else {
+                            observer(.error(HttpErrorType.networkConnectionLost(nil)))
+                        }
                     } else if nsError._code == NSURLErrorNotConnectedToInternet {
                         observer(.error(HttpErrorType.notConnectedToInternet))
                     } else if nsError._code == NSURLErrorSecureConnectionFailed || nsError._code == NSURLErrorServerCertificateHasBadDate || nsError._code == NSURLErrorServerCertificateUntrusted || nsError._code == NSURLErrorServerCertificateHasUnknownRoot || nsError._code == NSURLErrorServerCertificateNotYetValid || nsError._code == NSURLErrorClientCertificateRejected || nsError._code == NSURLErrorClientCertificateRequired || nsError._code == NSURLErrorClientCertificateRequired || nsError._code == NSURLErrorCannotLoadFromNetwork {
@@ -109,6 +119,11 @@ public class ApiCaller {
                             do {
                                 detail = try JSONSerialization.jsonObject(with: data, options: []) as? [AnyHashable: Any]
                             } catch {
+                            }
+                            detail?["url"] = url
+                            detail?["httpMethod"] = httpMethod
+                            if let requestBody = request.httpBody, let requestBodyLog = NSString(data: requestBody, encoding: String.Encoding.utf8.rawValue) {
+                                detail?["requestBody"] = requestBodyLog
                             }
                             observer(.error(HttpErrorType.statusCode(statusCode, detail)))
                             Logger.info("\n-------------------------api end---------------------------")

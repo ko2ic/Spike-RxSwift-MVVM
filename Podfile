@@ -24,6 +24,13 @@ abstract_target 'All' do
         shared_ui
     end
 
+    target 'ViewModels' do
+        shared_all
+        target 'ViewModelsTests' do
+             inherit! :search_paths
+        end
+    end
+
     target 'Domains' do
         shared_all
         shared_domains

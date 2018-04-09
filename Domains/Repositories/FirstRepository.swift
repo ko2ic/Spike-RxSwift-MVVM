@@ -9,5 +9,5 @@
 import RxSwift
 
 public protocol FirstRepository {
-    func fetchList() -> Single<SearchResultDto>
+    func fetchList(_ freeword: String) -> Single<SearchResultDto>
 }

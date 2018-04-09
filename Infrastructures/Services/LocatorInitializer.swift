@@ -18,9 +18,7 @@ public class LocatorInitializer {
      */
     private var initialize: () -> Void = {
         let locator = ServiceLocatorImpl.sharedInstance
-        locator.add {
-            ApiErrorStateChangerImpl()
-        }
+
         locator.add {
             TransactionTemplateImpl()
         }

@@ -14,9 +14,9 @@ class RepoHttpClient {
 
     fileprivate init() {}
 
-    func fetchList() -> Single<SearchResultDto> {
+    func fetchList(_ freeword: String) -> Single<SearchResultDto> {
         let api = ApiCaller.sharedInstance
-        let single: Single<SearchResultDto> = api.call(FetchContext(["q": "ko2ic", "page": 1]))
+        let single: Single<SearchResultDto> = api.call(FetchContext(["q": freeword, "page": 1]))
         return single
     }
 }
